@@ -109,6 +109,8 @@ public class form extends AppCompatActivity
             Intent i = new Intent(form.this, myfriends.class);
             startActivity(i);
         } else if (id == R.id.nav_slideshow) {
+            Intent i = new Intent(form.this, history.class);
+            startActivity(i);
 
         } else if (id == R.id.nav_manage) {
 /*

@@ -95,7 +95,8 @@ public class myfriends extends AppCompatActivity
             Intent i = new Intent(myfriends.this, myfriends.class);
             startActivity(i);
         } else if (id == R.id.nav_slideshow) {
-
+            Intent i = new Intent(myfriends.this, history.class);
+            startActivity(i);
         } else if (id == R.id.nav_manage) {
 /*
         } else if (id == R.id.nav_share) {

@@ -1,5 +1,6 @@
 package tree.giving.givingtree;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -81,17 +82,20 @@ public class history extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_camera) {
-            // Handle the camera action
+            Intent i = new Intent(history.this, MainActivity.class);
+            startActivity(i);
         } else if (id == R.id.nav_gallery) {
-
+            Intent i = new Intent(history.this, myfriends.class);
+            startActivity(i);
         } else if (id == R.id.nav_slideshow) {
-
+            Intent i = new Intent(history.this, history.class);
+            startActivity(i);
         } else if (id == R.id.nav_manage) {
-
+/*
         } else if (id == R.id.nav_share) {
 
         } else if (id == R.id.nav_send) {
-
+*/
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
