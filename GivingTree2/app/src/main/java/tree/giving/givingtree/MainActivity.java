@@ -13,22 +13,14 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+
 import java.util.ArrayList;
 
 
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
-    public ArrayList<User> createUsers(){
-        ArrayList<User> users = new ArrayList<User>();
-        User u1 = new User("superman", "password", "Clark", "Kent", 25);
-        User u2 = new User("wonderwoman", "password", "Diana", "Prince", 25);
-        User u3 = new User("batman", "password", "Bruce", "Wayne", 25);
-        users.add(u1);
-        users.add(u2);
-        users.add(u3);
-        return users;
-    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -53,9 +45,6 @@ public class MainActivity extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
-
-
-
     }
 
 

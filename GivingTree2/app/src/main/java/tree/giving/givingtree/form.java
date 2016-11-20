@@ -13,22 +13,10 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.EditText;
-
-import java.util.ArrayList;
 
 public class form extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
-    public ArrayList<User> createUsers(){
-        ArrayList<User> users = new ArrayList<User>();
-        User u1 = new User("superman", "password", "Clark", "Kent", 25);
-        User u2 = new User("wonderwoman", "password", "Diana", "Prince", 25);
-        User u3 = new User("batman", "password", "Bruce", "Wayne", 25);
-        users.add(u1);
-        users.add(u2);
-        users.add(u3);
-        return users;
-    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -112,15 +100,4 @@ public class form extends AppCompatActivity
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }
-    public void input_values (View view) {
-        EditText editText = (EditText) findViewById(R.id.itemName);
-        String itemString = editText.getText().toString();
-        editText = (EditText) findViewById(R.id.recipient);
-        String recipientString = editText.getText().toString();
-        editText = (EditText) findViewById(R.id.dateDeadline);
-        String endDate = editText.getText().toString();
-        editText = (EditText) findViewById(R.id.timeDeadline);
-        createUsers().get(0).getRequests().add(new Request(itemString, recipientString));
-    }
 }
-

@@ -9,9 +9,7 @@ public class User {
     String lastName;
     int karma = 25; // 0-50
     ArrayList requests = new ArrayList();
-    public User(String u, String p, String firstN, String lastN, int k){
 
-    }
     public String getFirstName(){
         return firstName;
     }
@@ -28,15 +26,15 @@ public class User {
         return requests;
     }
 
-    public void setFirstName(String first){
+    public void putFirstName(String first){
         firstName = first;
     }
 
-    public void setLastName(String last){
+    public void putLastName(String last){
         lastName = last;
     }
 
-    public void setKarma(int k){
+    public void putKarma(int k){
         karma = k;
     }
     public void addRequest(ArrayList newReq){
