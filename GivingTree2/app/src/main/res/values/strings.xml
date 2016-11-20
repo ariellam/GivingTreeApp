@@ -9,5 +9,5 @@
     <string name="action_settings">Settings</string>
     <string name="title_activity_contacts">contacts</string>
     <string name="title_activity_friends">Friends</string>
-    <string name="title_activity_myfriends">myfriends</string>
+    <string name="title_activity_myfriends">My Friends</string>
 </resources>
