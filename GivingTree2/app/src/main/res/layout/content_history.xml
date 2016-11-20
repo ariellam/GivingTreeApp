@@ -20,7 +20,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="15dp"
-        android:text="NAME: Some Body"
+        android:text="NAME: Clark Kent"
         android:background="#A1E887"
         android:padding="10dp"/><!--@strings/contact1-->
     <TextView
@@ -48,7 +48,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="15dp"
-        android:text="NAME: Idont Know"
+        android:text="NAME: Bruce Wayne"
         android:background="#E8E288"
         android:padding="10dp"/><!--@strings/contact2-->
     <TextView
@@ -77,7 +77,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="15dp"
-        android:text="NAME: Who Ever"
+        android:text="NAME: Bruce Wayne"
         android:background="#A1E887"
         android:padding="10dp"/><!--@strings/contact3"-->
     <TextView
@@ -106,7 +106,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="15dp"
-        android:text="NAME: Bad Person"
+        android:text="NAME: Diana Prince"
         android:background="#A1E887"
         android:padding="10dp"/><!--@strings/contact3"-->
     <TextView
@@ -135,7 +135,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="15dp"
-        android:text="NAME: Some One"
+        android:text="NAME: Clark Kent"
         android:background="#E8E288"
         android:padding="10dp"/><!--@strings/contact2-->
     <TextView
@@ -186,8 +186,5 @@
         android:layout_marginTop="490dp"
         android:layout_width="40dp"
         android:layout_height="40dp" />
-
-
-
-
+    
 </RelativeLayout>
