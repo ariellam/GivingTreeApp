@@ -2,7 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/content_contacts"
+    android:id="@+id/content_myfriends"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:paddingBottom="@dimen/activity_vertical_margin"
@@ -10,8 +10,8 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="tree.giving.givingtree.contacts"
-    tools:showIn="@layout/activity_contacts">
+    tools:context="tree.giving.givingtree.myfriends"
+    tools:showIn="@layout/app_bar_myfriends">
 
     <TextView
         android:layout_width="wrap_content"

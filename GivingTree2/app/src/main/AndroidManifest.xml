@@ -19,8 +19,8 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".contacts"
-            android:label="@string/title_activity_contacts"
+            android:name=".myfriends"
+            android:label="@string/title_activity_myfriends"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
