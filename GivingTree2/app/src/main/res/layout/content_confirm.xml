@@ -81,7 +81,7 @@
         android:id="@+id/button"
         android:onClick="toMain"
         style="@style/Widget.AppCompat.Button"
-        tools:text="Confirm"
+        android:text="Confirm"
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
