@@ -7,7 +7,8 @@ The app allows users to keep track of what they are lending to people and to who
 
 ###Functionality
 
-[] Search, add, see your friend's profile and tree.
-[] See your "transaction" history and add new "transactions."
+* Search, add, see your friend's profile and tree.
+
+* See your "transaction" history and add new "transactions."
 
 
