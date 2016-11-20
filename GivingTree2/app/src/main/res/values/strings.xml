@@ -10,4 +10,5 @@
     <string name="title_activity_contacts">contacts</string>
     <string name="title_activity_friends">Friends</string>
     <string name="title_activity_myfriends">My Friends</string>
+    <string name="title_activity_add_friends">addFriends</string>
 </resources>

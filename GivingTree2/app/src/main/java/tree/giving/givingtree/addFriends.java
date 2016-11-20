@@ -14,13 +14,13 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
-public class myfriends extends AppCompatActivity
+public class addFriends extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_myfriends);
+        setContentView(R.layout.activity_add_friends);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
@@ -43,11 +43,6 @@ public class myfriends extends AppCompatActivity
         navigationView.setNavigationItemSelectedListener(this);
     }
 
-    public void toAddFriends(View view) {
-        Intent i = new Intent(this, addFriends.class);
-        startActivity(i);
-    }
-
     @Override
     public void onBackPressed() {
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
@@ -61,7 +56,7 @@ public class myfriends extends AppCompatActivity
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.myfriends, menu);
+        getMenuInflater().inflate(R.menu.add_friends, menu);
         return true;
     }
 
@@ -89,7 +84,7 @@ public class myfriends extends AppCompatActivity
         if (id == R.id.nav_camera) {
             // Handle the camera action
         } else if (id == R.id.nav_gallery) {
-            Intent i = new Intent(myfriends.this, myfriends.class);
+            Intent i = new Intent(addFriends.this, myfriends.class);
             startActivity(i);
         } else if (id == R.id.nav_slideshow) {
 
