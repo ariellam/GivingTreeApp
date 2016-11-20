@@ -19,4 +19,5 @@
     <string name="rec_name">To who?</string>
     <string name="what_time">And what time?</string>
     <string name="priority">High Priority</string>
+    <string name="title_activity_confirm">confirm</string>
 </resources>
