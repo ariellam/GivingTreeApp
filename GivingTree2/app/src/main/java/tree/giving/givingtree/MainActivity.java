@@ -1,6 +1,8 @@
 package tree.giving.givingtree;
 
 import android.content.Intent;
+import android.content.res.Resources;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -20,7 +22,20 @@ import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
+<<<<<<< Updated upstream
 
+=======
+    public ArrayList<User> createUsers(){
+        ArrayList<User> users = new ArrayList<User>();
+        User u1 = new User("superman", "password", "Clark", "Kent", 10);
+        User u2 = new User("wonderwoman", "password", "Diana", "Prince", 25);
+        User u3 = new User("batman", "password", "Bruce", "Wayne", 40);
+        users.add(u1);
+        users.add(u2);
+        users.add(u3);
+        return users;
+    }
+>>>>>>> Stashed changes
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -45,6 +60,16 @@ public class MainActivity extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+<<<<<<< Updated upstream
+=======
+        Resources res = getResources();
+
+        Drawable plant = res.getDrawable(R.drawable.plantdead);
+        Drawable pot = res.getDrawable(R.drawable.pot);
+        Drawable potback = res.getDrawable(R.drawable.potback);
+
+
+>>>>>>> Stashed changes
     }
 
 
