@@ -67,6 +67,69 @@
         android:layout_width="40dp"
         android:layout_height="40dp" />
 
+    <ImageView
+        android:src="@drawable/potback"
+        android:layout_marginLeft="270dp"
+        android:layout_marginTop="50dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp" />
+
+    <ImageView
+        android:src="@drawable/planthealthy"
+        android:layout_marginLeft="270dp"
+        android:layout_marginTop="35dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp" />
+
+    <ImageView
+        android:src="@drawable/pot"
+        android:layout_marginLeft="270dp"
+        android:layout_marginTop="50dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp" />
+
+    <ImageView
+        android:src="@drawable/potback"
+        android:layout_marginLeft="270dp"
+        android:layout_marginTop="100dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp" />
+
+    <ImageView
+        android:src="@drawable/plantdead"
+        android:layout_marginLeft="270dp"
+        android:layout_marginTop="85dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp" />
+
+    <ImageView
+        android:src="@drawable/pot"
+        android:layout_marginLeft="270dp"
+        android:layout_marginTop="100dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp" />
+
+    <ImageView
+        android:src="@drawable/potback"
+        android:layout_marginLeft="270dp"
+        android:layout_marginTop="150dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp" />
+
+    <ImageView
+        android:src="@drawable/planthealthy"
+        android:layout_marginLeft="270dp"
+        android:layout_marginTop="135dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp" />
+
+    <ImageView
+        android:src="@drawable/pot"
+        android:layout_marginLeft="270dp"
+        android:layout_marginTop="150dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp" />
+
     <Button
         android:layout_marginTop="190dp"
         android:layout_marginLeft="25dp"
