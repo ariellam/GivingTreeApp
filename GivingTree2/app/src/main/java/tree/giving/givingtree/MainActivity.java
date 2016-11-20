@@ -59,7 +59,7 @@ public class MainActivity extends AppCompatActivity
         navigationView.setNavigationItemSelectedListener(this);
 
         Resources res = getResources();
-
+        if(createUsers().get(0).
         Drawable plant = res.getDrawable(R.drawable.plantdead);
         Drawable pot = res.getDrawable(R.drawable.pot);
         Drawable potback = res.getDrawable(R.drawable.potback);
