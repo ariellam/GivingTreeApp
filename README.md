@@ -11,4 +11,6 @@ The app allows users to keep track of what they are lending to people and to who
 
 * See your "transaction" history and add new "transactions."
 
+###Project Description
 
+Our team made an Android App called "Giving Tree". It allows users to keep track of the borrowing and lending of items(including money) between them and their friends. Users can sign in with their Google accounts and add their friends in their friend list. Each person has a growing plant to represent their "credit". The person lending items can create a "transaction" for the borrowing person to confirm. Each transaction contains information about the person involved, the item, the date of transaction and a deadline for returning the item. 
