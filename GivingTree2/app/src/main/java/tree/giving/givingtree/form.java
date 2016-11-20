@@ -3,8 +3,6 @@ package tree.giving.givingtree;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
-import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
@@ -13,12 +11,18 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.EditText;
 
 import java.util.ArrayList;
 
 public class form extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
+
+    public final static String EXTRA_ITEM = "tree.giving.givingtree.ITEM";
+    public final static String EXTRA_RECIPIENT = "tree.giving.givingtree.RECIPIENT";
+    public final static String EXTRA_DATE = "tree.giving.givingtree.DATE";
+    public final static String EXTRA_TIME = "tree.giving.givingtree.TIME";
     public ArrayList<User> createUsers(){
         ArrayList<User> users = new ArrayList<User>();
         User u1 = new User("superman", "password", "Clark", "Kent", 25);
@@ -62,6 +66,24 @@ public class form extends AppCompatActivity
 
     public void toConfirm(View view) {
         Intent i = new Intent(this, confirm.class);
+
+
+        EditText editText = (EditText) findViewById(R.id.itemName);
+        String itemString = editText.getText().toString();
+        editText = (EditText) findViewById(R.id.recipient);
+        String recipientString = editText.getText().toString();
+        editText = (EditText) findViewById(R.id.dateDeadline);
+        String endDate = editText.getText().toString();
+        editText = (EditText) findViewById(R.id.timeDeadline);
+        String endTime = editText.getText().toString();
+        createUsers().get(0).getRequests().add(new Request(itemString, recipientString));
+
+        i.putExtra(EXTRA_ITEM, itemString);
+        i.putExtra(EXTRA_RECIPIENT, recipientString);
+        i.putExtra(EXTRA_DATE, endDate);
+        i.putExtra(EXTRA_TIME, endTime);
+
+
         startActivity(i);
     }
 
@@ -109,8 +131,6 @@ public class form extends AppCompatActivity
             Intent i = new Intent(form.this, myfriends.class);
             startActivity(i);
         } else if (id == R.id.nav_slideshow) {
-            Intent i = new Intent(form.this, history.class);
-            startActivity(i);
 
         } else if (id == R.id.nav_manage) {
 /*
@@ -125,14 +145,7 @@ public class form extends AppCompatActivity
         return true;
     }
     public void input_values (View view) {
-        EditText editText = (EditText) findViewById(R.id.itemName);
-        String itemString = editText.getText().toString();
-        editText = (EditText) findViewById(R.id.recipient);
-        String recipientString = editText.getText().toString();
-        editText = (EditText) findViewById(R.id.dateDeadline);
-        String endDate = editText.getText().toString();
-        editText = (EditText) findViewById(R.id.timeDeadline);
-        createUsers().get(0).getRequests().add(new Request(itemString, recipientString));
+
     }
 }
 
