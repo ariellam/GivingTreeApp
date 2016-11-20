@@ -23,11 +23,12 @@ import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
-
+    int currentUser = 3;
+    userDatabase users = new userDatabase();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        int currentUser = 1;
-        userDatabase users = new userDatabase();
+
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
@@ -81,11 +82,83 @@ public class MainActivity extends AppCompatActivity
         }
 
     }
-/*
-    public void toForm(View view) {
-        Intent i = new Intent(this, form.class);
-        startActivity(i);
-    }*/
+
+    public void posKarma(View view) {
+
+
+        int karma;
+        karma = users.getUser(currentUser).getKarma();
+        karma +=1;
+        users.getUser(currentUser).setKarma(karma);
+
+        Resources res = getResources();
+        Drawable pot = res.getDrawable(R.drawable.pot);
+        Drawable potback = res.getDrawable(R.drawable.potback);
+        ImageView plantDead = (ImageView)findViewById(R.id.plantdead);
+        ImageView plantHealthy = (ImageView)findViewById(R.id.planthealthy);
+        ImageView plantBud = (ImageView)findViewById(R.id.plantbud);
+        plantDead.setVisibility(View.INVISIBLE);
+        plantHealthy.setVisibility(View.INVISIBLE);
+        plantBud.setVisibility(View.INVISIBLE);
+
+        if((users.getUser(currentUser).getKarma()) >= 20 && (users.getUser(0).getKarma()) < 30 ){
+            plantDead.setVisibility(View.INVISIBLE);
+            plantHealthy.setVisibility(View.INVISIBLE);
+            plantBud.setVisibility(View.VISIBLE);
+        }
+        else if((users.getUser(currentUser).getKarma()) >= 10 && (users.getUser(0).getKarma()) < 20 ){
+            plantDead.setVisibility(View.INVISIBLE);
+            plantHealthy.setVisibility(View.VISIBLE);
+            plantBud.setVisibility(View.INVISIBLE);
+        }
+        else if(users.getUser(currentUser).getKarma() < 10){
+            plantDead.setVisibility(View.VISIBLE);
+            plantHealthy.setVisibility(View.INVISIBLE);
+            plantBud.setVisibility(View.INVISIBLE);
+
+        }
+
+        //Intent i = new Intent(this, MainActivity.class);
+        //startActivity(i);
+    }
+
+    public void negKarma(View view) {
+
+
+        int karma;
+        karma = users.getUser(currentUser).getKarma();
+        karma -=1;
+        users.getUser(currentUser).setKarma(karma);
+
+        Resources res = getResources();
+        Drawable pot = res.getDrawable(R.drawable.pot);
+        Drawable potback = res.getDrawable(R.drawable.potback);
+        ImageView plantDead = (ImageView)findViewById(R.id.plantdead);
+        ImageView plantHealthy = (ImageView)findViewById(R.id.planthealthy);
+        ImageView plantBud = (ImageView)findViewById(R.id.plantbud);
+        plantDead.setVisibility(View.INVISIBLE);
+        plantHealthy.setVisibility(View.INVISIBLE);
+        plantBud.setVisibility(View.INVISIBLE);
+
+        if((users.getUser(currentUser).getKarma()) >= 20 && (users.getUser(0).getKarma()) < 30 ){
+            plantDead.setVisibility(View.INVISIBLE);
+            plantHealthy.setVisibility(View.INVISIBLE);
+            plantBud.setVisibility(View.VISIBLE);
+        }
+        else if((users.getUser(currentUser).getKarma()) >= 10 && (users.getUser(0).getKarma()) < 20 ){
+            plantDead.setVisibility(View.INVISIBLE);
+            plantHealthy.setVisibility(View.VISIBLE);
+            plantBud.setVisibility(View.INVISIBLE);
+        }
+        else if(users.getUser(currentUser).getKarma() < 10){
+            plantDead.setVisibility(View.VISIBLE);
+            plantHealthy.setVisibility(View.INVISIBLE);
+            plantBud.setVisibility(View.INVISIBLE);
+
+        }
+        //Intent i = new Intent(this, MainActivity.class);
+        //startActivity(i);
+    }
 
 
 
