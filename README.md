@@ -1,5 +1,5 @@
 # Giving Tree App
-This is a Lady Hacks 2016 project made by @ariellam, @jiayi-zhou, @ivy-ruofan-xing.
+This is a Lady Hacks 2016 project made by @ariellam, @jiayi-zhou, @ivy-ruofan-xing and @roxelo.
 
 ###Concept
 
