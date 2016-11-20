@@ -18,7 +18,7 @@
         android:layout_height="wrap_content"
         android:textSize="25dp"
         android:textStyle="bold"
-        android:text="My Friends"
+        android:text="Friends"
 
         />
     <TextView
@@ -28,7 +28,7 @@
         android:layout_height="wrap_content"
         android:textSize="20dp"
         android:onClick="someOne"
-        android:text="Some One" /><!--@strings/contact1-->
+        android:text="Clark Kent" /><!--@strings/contact1-->
     <TextView
         android:layout_marginTop="105dp"
         android:layout_marginLeft="90dp"
@@ -36,7 +36,7 @@
         android:layout_height="wrap_content"
         android:textSize="20dp"
         android:onClick="idontKnow"
-        android:text="Idont Know" /><!--@strings/contact2-->
+        android:text="Bruce Wayne" /><!--@strings/contact2-->
     <TextView
         android:layout_marginTop="155dp"
         android:layout_marginLeft="90dp"
@@ -44,7 +44,7 @@
         android:layout_height="wrap_content"
         android:textSize="20dp"
         android:onClick="someBody"
-        android:text="Some Body"/><!--@strings/contact3"-->
+        android:text="Diana Prince"/><!--@strings/contact3"-->
 
     <ImageView
         android:src="@drawable/ic_contact"
