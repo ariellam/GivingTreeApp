@@ -1,4 +1,4 @@
-package jiayi.givingtree;
+package jiayi.thegivingtree;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -10,7 +10,7 @@ import android.widget.Spinner;
 import java.util.Calendar;
 
 
-public class formActivity extends AppCompatActivity {
+public class FormActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
