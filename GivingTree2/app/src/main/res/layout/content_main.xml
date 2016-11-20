@@ -159,7 +159,15 @@
             android:layout_marginTop="350px"
             android:id="@+id/planthealthy"
             />
+        <ImageView
+            android:layout_height="450px"
+            android:layout_width="450px"
+            android:src="@drawable/plantbud"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="250px"
+            android:id="@+id/plantbud"
 
+            />
 
         <ImageView
             android:layout_height="600px"

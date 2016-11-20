@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-
+        int currentUser = 1;
         userDatabase users = new userDatabase();
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
@@ -58,13 +58,26 @@ public class MainActivity extends AppCompatActivity
         Drawable potback = res.getDrawable(R.drawable.potback);
         ImageView plantDead = (ImageView)findViewById(R.id.plantdead);
         ImageView plantHealthy = (ImageView)findViewById(R.id.planthealthy);
-        if((users.getUser(0).getKarma()) > 20){
+        ImageView plantBud = (ImageView)findViewById(R.id.plantbud);
+        plantDead.setVisibility(View.INVISIBLE);
+        plantHealthy.setVisibility(View.INVISIBLE);
+        plantBud.setVisibility(View.INVISIBLE);
+
+        if((users.getUser(currentUser).getKarma()) >= 20 && (users.getUser(0).getKarma()) < 30 ){
+            plantDead.setVisibility(View.INVISIBLE);
+            plantHealthy.setVisibility(View.INVISIBLE);
+            plantBud.setVisibility(View.VISIBLE);
+        }
+        else if((users.getUser(currentUser).getKarma()) >= 10 && (users.getUser(0).getKarma()) < 20 ){
             plantDead.setVisibility(View.INVISIBLE);
             plantHealthy.setVisibility(View.VISIBLE);
+            plantBud.setVisibility(View.INVISIBLE);
         }
-        else if(users.getUser(0).getKarma() <= 20){
+        else if(users.getUser(currentUser).getKarma() < 10){
             plantDead.setVisibility(View.VISIBLE);
             plantHealthy.setVisibility(View.INVISIBLE);
+            plantBud.setVisibility(View.INVISIBLE);
+
         }
 
     }

@@ -8,9 +8,9 @@ import java.util.ArrayList;
 
 public class userDatabase {
     ArrayList<User> users = new ArrayList<User>();
-    User u1 = new User("superman", "password", "Clark", "Kent", 10);
-    User u2 = new User("wonderwoman", "password", "Diana", "Prince", 25);
-    User u3 = new User("batman", "password", "Bruce", "Wayne", 30);
+    User u1 = new User("superman", "password", "Clark", "Kent", 5);
+    User u2 = new User("wonderwoman", "password", "Diana", "Prince", 15);
+    User u3 = new User("batman", "password", "Bruce", "Wayne", 25);
     public userDatabase(){
         users.add(u1);
         users.add(u2);

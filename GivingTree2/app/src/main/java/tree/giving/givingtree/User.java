@@ -7,14 +7,18 @@ public class User {
     String password;
     String firstName;
     String lastName;
-    int karma = 25; // 0-50
+    int karma; // 0-50
     ArrayList requests = new ArrayList();
 
     public String getFirstName(){
         return firstName;
     }
     public User(String u, String p, String firstN, String lastN, int k){
-
+        username = u;
+        password = p;
+        firstName = firstN;
+        lastName = lastN;
+        karma = k;
     }
     public String getLastName(){
         return lastName;
