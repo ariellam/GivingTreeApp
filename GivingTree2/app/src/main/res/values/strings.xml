@@ -23,16 +23,13 @@
 
     <string name="item">Item name:</string>
     <string name="receiver">To:</string>
-<<<<<<< HEAD
+
 
     <string name="title_activity_history">Transaction History</string>
 
     <string name="username">Jane Doe</string>
 
-=======
-    <string name="title_activity_history">history</string>
-    <string name="username">Jane Doe</string>
->>>>>>> origin/master
+
 
     <string name="date1">11/20/2016</string>
     <string name="item1">15$</string>
