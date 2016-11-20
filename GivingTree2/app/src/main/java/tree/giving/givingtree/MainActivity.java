@@ -22,9 +22,7 @@ import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
-<<<<<<< Updated upstream
 
-=======
     public ArrayList<User> createUsers(){
         ArrayList<User> users = new ArrayList<User>();
         User u1 = new User("superman", "password", "Clark", "Kent", 10);
@@ -35,7 +33,6 @@ public class MainActivity extends AppCompatActivity
         users.add(u3);
         return users;
     }
->>>>>>> Stashed changes
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -60,8 +57,7 @@ public class MainActivity extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
-<<<<<<< Updated upstream
-=======
+
         Resources res = getResources();
 
         Drawable plant = res.getDrawable(R.drawable.plantdead);
@@ -69,7 +65,6 @@ public class MainActivity extends AppCompatActivity
         Drawable potback = res.getDrawable(R.drawable.potback);
 
 
->>>>>>> Stashed changes
     }
 
 
