@@ -13,32 +13,5 @@
     tools:context="tree.giving.givingtree.MainActivity"
     tools:showIn="@layout/app_bar_main">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!" />
-    <EditText android:id="@+id/edit_message"
-        android:layout_marginTop="60dp"
 
-        android:layout_width="260dp"
-        android:layout_height="wrap_content"
-        android:hint="@string/edit_message" />
-
-    <Button
-        android:layout_marginTop="60dp"
-        android:layout_marginLeft="260dp"
-
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/button_send"
-        android:onClick="sendMessage"
-        />
-
-    <Button
-        android:layout_marginTop="120dp"
-        android:layout_width="400dp"
-        android:layout_height="70dp"
-        android:text="@string/button_send"
-        android:onClick="sendMessage"
-        android:id="@+id/button" />
 </RelativeLayout>

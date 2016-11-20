@@ -13,4 +13,21 @@
     tools:context="tree.giving.givingtree.addFriends"
     tools:showIn="@layout/app_bar_add_friends">
 
+    <EditText android:id="@+id/edit_message"
+        android:layout_marginTop="5dp"
+
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:hint="Username" />
+
+    <Button
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="250dp"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add"
+
+        />
+
 </RelativeLayout>
