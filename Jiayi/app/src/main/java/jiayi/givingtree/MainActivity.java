@@ -21,10 +21,13 @@ public class formActivity extends AppCompatActivity {
     public void input_values (View view){
         EditText editText = (EditText) findViewById(R.id.itemName);
         String item = editText.getText().toString();
+i
         editText = (EditText) findViewById(R.id.recipient);
         String recipient = editText.getText().toString();
+
         editText = (EditText) findViewById(R.id.dateDeadline);
         String endDate = editText.getText().toString();
+
         editText = (EditText) findViewById(R.id.timeDeadline);
         String endTime = editText.getText().toString();
     }
