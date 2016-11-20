@@ -25,6 +25,10 @@
         <activity
             android:name=".addFriends"
             android:label="@string/title_activity_add_friends"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".form"
+            android:label="@string/title_activity_form"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 

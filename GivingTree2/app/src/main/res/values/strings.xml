@@ -11,4 +11,12 @@
     <string name="title_activity_friends">Friends</string>
     <string name="title_activity_myfriends">My Friends</string>
     <string name="title_activity_add_friends">Add Friends</string>
+    <string name="title_activity_form">Lending</string>
+
+    <string name="what_date">Until what date?</string>
+
+    <string name="item_name">What are you lending?</string>
+    <string name="rec_name">To who?</string>
+    <string name="what_time">And what time?</string>
+    <string name="priority">High Priority</string>
 </resources>
