@@ -60,6 +60,11 @@ public class form extends AppCompatActivity
         navigationView.setNavigationItemSelectedListener(this);
     }
 
+    public void toConfirm(View view) {
+        Intent i = new Intent(this, confirm.class);
+        startActivity(i);
+    }
+
     @Override
     public void onBackPressed() {
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

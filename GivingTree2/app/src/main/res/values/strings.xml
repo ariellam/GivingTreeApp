@@ -19,7 +19,7 @@
     <string name="rec_name">To who?</string>
     <string name="what_time">And what time?</string>
     <string name="priority">High Priority</string>
-    <string name="title_activity_confirm">confirm</string>
+    <string name="title_activity_confirm">Confirmation</string>
 
     <string name="item">Item name:</string>
     <string name="receiver">To:</string>
