@@ -60,6 +60,11 @@ public class form extends AppCompatActivity
         navigationView.setNavigationItemSelectedListener(this);
     }
 
+    public void toConfirm(View view) {
+        Intent i = new Intent(this, confirm.class);
+        startActivity(i);
+    }
+
     @Override
     public void onBackPressed() {
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
@@ -98,7 +103,8 @@ public class form extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_camera) {
-            // Handle the camera action
+            Intent i = new Intent(form.this, MainActivity.class);
+            startActivity(i);
         } else if (id == R.id.nav_gallery) {
             Intent i = new Intent(form.this, myfriends.class);
             startActivity(i);

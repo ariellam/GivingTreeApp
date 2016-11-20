@@ -2,7 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/content_form"
+    android:id="@+id/content_confirm"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:paddingBottom="@dimen/activity_vertical_margin"
@@ -10,8 +10,8 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="tree.giving.givingtree.form"
-    tools:showIn="@layout/app_bar_form">
+    tools:context="tree.giving.givingtree.confirm"
+    tools:showIn="@layout/app_bar_confirm">
 
     <TextView
 
@@ -20,15 +20,15 @@
         android:layout_height="wrap_content"
         android:id="@+id/textView2" />
 
-    <EditText
+    <TextView
+
         android:layout_marginTop="15dp"
         android:layout_marginLeft="0dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="text"
         android:ems="10"
         android:id="@+id/itemName"
-        android:hint="@string/item_name" />
+        android:text="@string/item_name" />
 
 
     <TextView
@@ -38,15 +38,14 @@
         android:layout_height="wrap_content"
         android:id="@+id/textView3" />
 
-    <EditText
+    <TextView
         android:layout_marginTop="70dp"
         android:layout_marginLeft="0dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
         android:id="@+id/recipient"
-        android:inputType="text"
-        android:hint="@string/rec_name" />
+        android:text="@string/rec_name" />
 
     <TextView
         android:layout_marginTop="110dp"
@@ -56,25 +55,24 @@
         android:layout_height="wrap_content"
         android:id="@+id/textView4" />
 
-    <EditText
+    <TextView
         android:layout_marginTop="125dp"
         android:layout_marginLeft="0dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="date"
+
         android:ems="10"
         android:id="@+id/dateDeadline"
-        android:hint="@string/what_date" />
+        android:text="@string/what_date" />
 
-    <EditText
+    <TextView
         android:layout_marginTop="155dp"
         android:layout_marginLeft="0dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="time"
         android:ems="10"
         android:id="@+id/timeDeadline"
-        android:hint="@string/what_time" />
+        android:text="@string/what_time" />
 
     <TextView
         android:layout_marginTop="195dp"
@@ -84,22 +82,16 @@
         android:layout_height="wrap_content"
         android:id="@+id/textView" />
 
-    <CheckBox
-        android:layout_marginTop="215dp"
-        android:layout_marginLeft="0dp"
-        android:text="@string/priority"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/checkBox" />
 
     <Button
         android:layout_marginTop="250dp"
         android:layout_marginLeft="0dp"
-        android:text="Done"
+        android:text="Confirm"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/button"
+        android:onClick="toMain"
         style="@style/Widget.AppCompat.Button"
-        android:onClick="input_values" />
+         />
 
 </RelativeLayout>
