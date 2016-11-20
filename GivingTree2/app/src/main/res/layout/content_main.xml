@@ -15,125 +15,7 @@
     tools:showIn="@layout/app_bar_main">
 
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="30dp"
-            android:textStyle="bold"
-            android:text="@string/username"
-            android:layout_centerHorizontal="true"
 
-            />
-
-        <TextView
-            android:layout_marginTop="55dp"
-            android:layout_marginLeft="0dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textStyle="bold"
-            android:textSize="17dp"
-            android:text="Upcoming:" />
-
-        <TextView
-            android:layout_marginTop="55dp"
-            android:layout_marginLeft="100dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="17dp"
-            android:text="Give back" />
-
-        <TextView
-            android:layout_marginTop="55dp"
-            android:layout_marginLeft="178dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="17dp"
-            android:textStyle="italic"
-
-            android:text="@string/item1" />
-
-        <TextView
-            android:layout_marginTop="80dp"
-            android:layout_marginLeft="230dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="17dp"
-            android:textStyle="italic"
-
-            android:text="@string/date1" />
-
-        <TextView
-            android:layout_marginTop="80dp"
-            android:layout_marginLeft="175dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="17dp"
-            android:text="before" />
-
-        <TextView
-            android:layout_marginTop="115dp"
-            android:layout_marginLeft="0dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textStyle="bold"
-            android:textSize="17dp"
-            android:text="Active Requests:" />
-
-        <TextView
-            android:layout_marginTop="115dp"
-            android:layout_marginLeft="130dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="17dp"
-            android:textStyle="italic"
-            android:text="@string/item1" />
-
-        <TextView
-            android:layout_marginTop="145dp"
-            android:layout_marginLeft="130dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="17dp"
-            android:textStyle="italic"
-
-            android:text="@string/item2" />
-
-        <TextView
-            android:layout_marginTop="175dp"
-            android:layout_marginLeft="130dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="17dp"
-            android:textStyle="italic"
-            android:text="@string/item3" />
-
-        <TextView
-            android:layout_marginTop="452dp"
-            android:layout_marginLeft="10dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="25dp"
-            android:textStyle="bold"
-            android:text="@string/karma" />
-
-        <TextView
-            android:layout_marginTop="455dp"
-            android:layout_marginLeft="40dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="20dp"
-            android:text="points until next evolution" />
-<!--
-        <Button
-            android:layout_marginTop="390dp"
-            android:layout_centerHorizontal="true"
-            android:layout_width="70dp"
-            android:layout_height="50dp"
-            android:text="Demo"
-            android:onClick="toDown"
-            android:id="@+id/button"
-            />
-            -->
 
         <ImageView
             android:layout_height="600px"
@@ -182,6 +64,24 @@
             android:id="@+id/pot"
 
             />
+
+        <Button
+            android:text="+ Karma"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/potback"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/add" />
+
+        <Button
+            android:text="- karma"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/potback"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/subtract" />
 
 
 
