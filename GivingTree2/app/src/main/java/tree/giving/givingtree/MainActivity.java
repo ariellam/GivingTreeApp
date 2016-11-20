@@ -15,6 +15,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ImageView;
 
 import java.util.ArrayList;
 
@@ -25,13 +26,16 @@ public class MainActivity extends AppCompatActivity
 
     public ArrayList<User> createUsers(){
         ArrayList<User> users = new ArrayList<User>();
-        User u1 = new User("superman", "password", "Clark", "Kent", 25);
+        User u1 = new User("superman", "password", "Clark", "Kent", 10);
         User u2 = new User("wonderwoman", "password", "Diana", "Prince", 25);
-        User u3 = new User("batman", "password", "Bruce", "Wayne", 25);
+        User u3 = new User("batman", "password", "Bruce", "Wayne", 30);
         users.add(u1);
         users.add(u2);
         users.add(u3);
         return users;
+    }
+    public ArrayList<User> accessUsers(ArrayList<User> u){
+        return u;
     }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -61,10 +65,23 @@ public class MainActivity extends AppCompatActivity
         navigationView.setNavigationItemSelectedListener(this);
 
         Resources res = getResources();
-        Drawable plant = res.getDrawable(R.drawable.plantdead);
+        if(createUsers().get(0).getKarma()<20){
+            Drawable plant = res.getDrawable(R.drawable.plantdead);
+        }else{
+            Drawable plant = res.getDrawable(R.drawable.planthealthy);
+        }
         Drawable pot = res.getDrawable(R.drawable.pot);
         Drawable potback = res.getDrawable(R.drawable.potback);
-
+        ImageView plantDead = (ImageView)findViewById(R.id.plantdead);
+        ImageView plantHealthy = (ImageView)findViewById(R.id.planthealthy);
+        if((createUsers().get(0).getKarma()) > 20){
+            plantDead.setVisibility(View.INVISIBLE);
+            plantHealthy.setVisibility(View.VISIBLE);
+        }
+        else if(createUsers().get(0).getKarma() <= 20){
+            plantDead.setVisibility(View.VISIBLE);
+            plantHealthy.setVisibility(View.INVISIBLE);
+        }
 
     }
 /*

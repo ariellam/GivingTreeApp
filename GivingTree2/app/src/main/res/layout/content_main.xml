@@ -13,22 +13,6 @@
     tools:context="tree.giving.givingtree.MainActivity"
     tools:showIn="@layout/app_bar_main">
 
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-        <!--    <EditText android:id="@+id/edit_message"
-                android:layout_weight="1"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:hint="@string/edit_message" />
-
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/button_send"
-                android:onClick="sendMessage"/> -->
 
         <TextView
             android:layout_width="wrap_content"
@@ -101,7 +85,6 @@
             android:layout_height="wrap_content"
             android:textSize="17dp"
             android:textStyle="italic"
-
             android:text="@string/item1" />
 
         <TextView
@@ -121,7 +104,6 @@
             android:layout_height="wrap_content"
             android:textSize="17dp"
             android:textStyle="italic"
-
             android:text="@string/item3" />
 
         <TextView
@@ -131,7 +113,6 @@
             android:layout_height="wrap_content"
             android:textSize="25dp"
             android:textStyle="bold"
-
             android:text="@string/karma" />
 
         <TextView
@@ -140,13 +121,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="20dp"
-
-
             android:text="points until next evolution" />
 
         <Button
             android:layout_marginTop="390dp"
-
             android:layout_centerHorizontal="true"
             android:layout_width="70dp"
             android:layout_height="50dp"
@@ -159,10 +137,9 @@
             android:layout_height="600px"
             android:layout_width="600px"
             android:src="@drawable/potback"
-            android:layout_marginTop="480px"
-
+            android:layout_marginTop="500px"
             android:layout_centerHorizontal="true"
-
+            android:id="@+id/potback"
             />
 
         <ImageView
@@ -170,9 +147,8 @@
             android:layout_width="450px"
             android:src="@drawable/plantdead"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="330px"
-            android:visibility="invisible"
-
+            android:layout_marginTop="350px"
+            android:id="@+id/plantdead"
 
             />
         <ImageView
@@ -180,20 +156,19 @@
             android:layout_width="450px"
             android:src="@drawable/planthealthy"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="330px"
-            android:visibility="visible"
-
-
+            android:layout_marginTop="350px"
+            android:id="@+id/planthealthy"
             />
+
 
         <ImageView
             android:layout_height="600px"
             android:layout_width="600px"
             android:src="@drawable/pot"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="480px"
-
+            android:layout_marginTop="500px"
             android:layout_gravity="center"
+            android:id="@+id/pot"
 
             />
 
