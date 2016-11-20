@@ -74,6 +74,7 @@ public class MainActivity extends AppCompatActivity
     }*/
 
 
+
     @Override
     public void onBackPressed() {
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
@@ -113,7 +114,7 @@ public class MainActivity extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_camera) {
-            Intent i = new Intent(MainActivity.this, form.class);
+            Intent i = new Intent(MainActivity.this, MainActivity.class);
             startActivity(i);
         } else if (id == R.id.nav_gallery) {
             Intent i = new Intent(MainActivity.this, myfriends.class);

@@ -89,7 +89,8 @@ public class myfriends extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_camera) {
-            // Handle the camera action
+            Intent i = new Intent(myfriends.this, MainActivity.class);
+            startActivity(i);
         } else if (id == R.id.nav_gallery) {
             Intent i = new Intent(myfriends.this, myfriends.class);
             startActivity(i);
