@@ -25,9 +25,9 @@ public class MainActivity extends AppCompatActivity
 
     public ArrayList<User> createUsers(){
         ArrayList<User> users = new ArrayList<User>();
-        User u1 = new User("superman", "password", "Clark", "Kent", 10);
+        User u1 = new User("superman", "password", "Clark", "Kent", 25);
         User u2 = new User("wonderwoman", "password", "Diana", "Prince", 25);
-        User u3 = new User("batman", "password", "Bruce", "Wayne", 40);
+        User u3 = new User("batman", "password", "Bruce", "Wayne", 25);
         users.add(u1);
         users.add(u2);
         users.add(u3);
@@ -59,7 +59,6 @@ public class MainActivity extends AppCompatActivity
         navigationView.setNavigationItemSelectedListener(this);
 
         Resources res = getResources();
-        if(createUsers().get(0).
         Drawable plant = res.getDrawable(R.drawable.plantdead);
         Drawable pot = res.getDrawable(R.drawable.pot);
         Drawable potback = res.getDrawable(R.drawable.potback);
