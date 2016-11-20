@@ -33,6 +33,10 @@
         <activity
             android:name=".confirm"
             android:label="@string/title_activity_confirm"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".history"
+            android:label="@string/title_activity_history"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 

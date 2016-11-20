@@ -23,6 +23,7 @@
 
     <string name="item">Item name:</string>
     <string name="receiver">To:</string>
+    <string name="title_activity_history">history</string>
 
 
 </resources>

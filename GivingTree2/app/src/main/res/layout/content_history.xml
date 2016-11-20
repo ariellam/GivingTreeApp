@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_history"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="tree.giving.givingtree.history"
+    tools:showIn="@layout/app_bar_history">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:text="Transaction History"/>
+    <TextView
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="35dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:text="Name: Friend A; Item: $10; Date: Nov 10, 2016"
+        android:background="#A1E887"/><!--@strings/contact1-->
+    <TextView
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="35dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:text="Name: Idont Know; Item: book; Date: Oct 30, 2016"
+        android:background="#E8E288"/><!--@strings/contact2-->
+    <TextView
+        android:layout_marginTop="130dp"
+        android:layout_marginLeft="35dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:text="Name: Who Ever; Item: $5.50; Date: Nov 19, 2016"
+        android:background="#A1E887"/><!--@strings/contact3"-->
+    <TextView
+        android:layout_marginTop="180dp"
+        android:layout_marginLeft="35dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:text="Name: Bad Person; Item: $120; Date: Jan 19, 2015"
+        android:background="#A1E887"/><!--@strings/contact3"-->
+    <TextView
+        android:layout_marginTop="230dp"
+        android:layout_marginLeft="35dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:text="Name: Some Body; Item: Soylent; Date: Sep 5, 2016"
+        android:background="#E8E288"/><!--@strings/contact2-->
+
+    <ImageView
+        android:src="@drawable/ic_arrow_left"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="50dp"
+        android:layout_width="20dp"
+        android:layout_height="20dp" />
+
+    <ImageView
+        android:src="@drawable/ic_arrow_right"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="85dp"
+        android:layout_width="20dp"
+        android:layout_height="20dp" />
+
+    <ImageView
+        android:src="@drawable/ic_arrow_left"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="135dp"
+        android:layout_width="20dp"
+        android:layout_height="20dp" />
+
+    <ImageView
+        android:src="@drawable/ic_arrow_left"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="185dp"
+        android:layout_width="20dp"
+        android:layout_height="20dp" />
+
+    <ImageView
+        android:src="@drawable/ic_arrow_right"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="235dp"
+        android:layout_width="20dp"
+        android:layout_height="20dp" />
+
+
+
+</RelativeLayout>
