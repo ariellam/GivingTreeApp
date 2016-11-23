@@ -5,6 +5,8 @@
 
 The Lady Hacks 2016 project made by @ariellam, @jiayi-zhou, @ivy-ruofan-xing and @roxelo.
 
+[Devpost Link](https://devpost.com/software/givingtreeapp)
+
 The app allows users to keep track of what they are lending to people and to whom they owe something. Each user takes care of their own "karma" tree which grows or withers depending on the positive or negative transactions with others.
 
 ###Functionality
